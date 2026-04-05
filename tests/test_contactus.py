@@ -12,7 +12,7 @@ def test_contact_us(driver):
         name="Kanhu",
         email="kanhu@example.com",
         subject="Test Subject",
-        message="This is a test message from automation script."
+        message="This is a tests message from automation script."
     )
     time.sleep(1)
 
