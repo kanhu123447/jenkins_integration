@@ -21,7 +21,7 @@ def test_product_page(driver):
     product.click_add_to_cart()
     time.sleep(4)
     product.click_continue_shopping()
-    time.sleep(4)
+    time.sleep(5)
 
 def test_submit_review(driver):
     product=ProductPage(driver)
