@@ -4,7 +4,7 @@ class Config:
     TIMEOUT = 10
 
     BROWSER = "chrome"
-
+    HEADLESS=False
     REPORTS_PATH = "reports/"
     SCREENSHOTS_PATH = "screenshots/"
 
