@@ -8,7 +8,7 @@ def test_home_page_action(driver):
 
     home.click_products()
     time.sleep(5)
-    assert "All product" in driver.page_source,"failed the navigate page"
+    assert "All product" in driver.page_source,"failed the to navigate page"
     home.click_test_cases()
     time.sleep(5)
     assert "Testcase" in driver.page_source,"failed testcase page"
