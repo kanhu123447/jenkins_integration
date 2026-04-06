@@ -11,4 +11,4 @@
 - Screenshot on failure
 
 ## How to run
-pytest
+pytest -v -s
