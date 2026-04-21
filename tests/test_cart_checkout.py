@@ -7,17 +7,20 @@ def test_and_add_remove_product_from_cart(driver):
     product=ProductPage(driver)
     cart=CartPage(driver)
 
+
+    product.close_alert()
+    time.sleep(5)
     product.open_products_page()
     time.sleep(4)
 
-    product.open_products_page()
-    time.sleep(3)
+    #product.open_products_page()
+    #time.sleep(3)
 
-    product.set_quantity()
+    product.set_quantity(2)
     time.sleep(2)
 
     product.click_add_to_cart()
-    time.sleep(2)
+    time.sleep(4)
 
     product.click_continue_shopping()
     time.sleep(3)

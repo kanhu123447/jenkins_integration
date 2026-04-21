@@ -17,8 +17,13 @@ class HomePage(BasePage):
     SUBSCRIPTION_SUCCESS_MSG = (By.XPATH, "//div[@class='alert-success alert']")
     RECOMMENDED_ITEMS = (By.XPATH, "//h2[contains(text(),'recommended items')]")
     SCROLL_UP_ARROW = (By.ID, "scrollUp")
+    close_btn = (By.XPATH, "//button[@class='close']")
+
+
 
     # Actions
+    def close_alert(self):
+        self.click(self.close_btn)
     def click_login(self):
         self.click(self.LOGIN_LINK)
 

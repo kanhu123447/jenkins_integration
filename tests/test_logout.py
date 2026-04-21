@@ -17,7 +17,7 @@ def test_logout(driver,email,password):
 
     login.login(email,password)
     time.sleep(2)
-    assert "logout" in driver.page_source,"login failed-logout linl not found"
+    assert "logout" in driver.page_source,"login failed-logout link not found"
 
     home.click_logout()
     time.sleep(1)
